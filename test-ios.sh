@@ -1,0 +1,2 @@
+#!/bin/bash
+/Applications/Unity/Unity.app/Contents/MacOS/Unity -batchmode -projectPath /Users/paulius/Desktop/Test_Projects/PerfomanceBench/qakit-data-collector -executeMethod iOSTestRunnerInterface.InitEnvironment  

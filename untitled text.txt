@@ -1,0 +1,16 @@
+{"address":"52.28.9.224","port":9999,"domain":0,"networkId":"4503599629924650","accessTokenString":"0qfpisi0DGmSSfsa5rO0sQowc7S2dBujs9ZAMkpoce7MnGL9alA8XJKGo4HXlE/gxKehyd3vq5pw7oNpLSzIEQ==","nodeId":"28096","usingRelay":true,"success":true,"extendedInfo":""}
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+UnityEngine.Networking.Match.<ProcessMatchResponse>c__Iterator0`2:MoveNext() (at /Volumes/SandDiskSSD/Workspace/unity/Runtime/Networking/Managed/MatchMakingClient.cs:412)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at /Volumes/SandDiskSSD/Workspace/unity/Runtime/Export/Coroutines.cs:17)
+
+
+
+Hey,
+
+So I did some debugging and both in both ConnectAsNetworkHost and ConnectToNetworkPeer ipstr is "52.29.208.212" when using the MatchMaker. 
+Which is parsed from 'ProcessMatchResponse' in MatchMakingClient.cs.
+
+I'm not sure if I understand how does this really work, but does this mean that the ipv4 adress is nevert
